@@ -7,15 +7,15 @@ import de.craftstuebchen.api.craftbukkit.packets.WorldBorderPacketPlayOutWorldBo
 
 public class WorldBorderPlayer {
 
-	private CraftPlayer player;
+    private CraftPlayer player;
 
-	public WorldBorderPlayer(Player player) {
-		this.player = (CraftPlayer) player;
-	}
+    public WorldBorderPlayer(Player player) {
+        this.player = (CraftPlayer) player;
+    }
 
-	public void sendPacket(WorldBorderPacketPlayOutWorldBorder packetPlayOutWorldBorder) {
-		player.getHandle().playerConnection.sendPacket(packetPlayOutWorldBorder
-				.getHandle());
-	}
+    public void sendPacket(WorldBorderPacketPlayOutWorldBorder packetPlayOutWorldBorder) {
+        player.getHandle().playerConnection.sendPacket(packetPlayOutWorldBorder
+                .getHandle());
+    }
 
 }
