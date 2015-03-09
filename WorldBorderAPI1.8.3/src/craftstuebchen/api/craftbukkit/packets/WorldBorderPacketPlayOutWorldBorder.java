@@ -1,7 +1,7 @@
-package de.craftstuebchen.api.craftbukkit.packets;
+package craftstuebchen.api.craftbukkit.packets;
 
-import de.craftstuebchen.api.craftbukkit.world.WorldBorder_Border;
-import de.craftstuebchen.api.craftbukkit.world.WorldBorderAction;
+import craftstuebchen.api.craftbukkit.world.WorldBorder_Border;
+import craftstuebchen.api.craftbukkit.world.WorldBorderAction;
 import net.minecraft.server.v1_8_R2.PacketPlayOutWorldBorder;
 
 public class WorldBorderPacketPlayOutWorldBorder {

@@ -1,4 +1,4 @@
-package de.craftstuebchen.api.craftbukkit.world;
+package craftstuebchen.api.craftbukkit.world;
 
 import net.minecraft.server.v1_8_R2.WorldBorder;
 import org.bukkit.craftbukkit.v1_8_R2.CraftWorld;
@@ -26,18 +26,17 @@ public class WorldBorder_Border implements IWorldBorder {
 
     @Override
     public void setRadius(double radius){
+        border.setSize(radius);
 
     }
     @Override
     public double getWidth(){
-        //TODO Implement
-        return 0.0;
+        return border.d();
     }
 
     @Override
     public double getLength(){
-        //TODO implement
-        return 0.0;
+        return border.e();
     }
 
     public WorldBorder getHandle() {
@@ -48,7 +47,7 @@ public class WorldBorder_Border implements IWorldBorder {
         return border.getCenterX();
     }
 
-    public double getCenterY() {
+    public double getCenterZ() {
         return border.getCenterZ();
     }
 
@@ -60,11 +59,11 @@ public class WorldBorder_Border implements IWorldBorder {
         return border.e();
     }
 
-    public double getMinY() {
+    public double getMinZ() {
         return border.c();
     }
 
-    public double getMaxY() {
+    public double getMaxZ() {
         return border.e();
     }
 
