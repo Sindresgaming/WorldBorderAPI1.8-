@@ -17,13 +17,13 @@ public interface IWorldBorder {
 
 	public void setCenter(double x, double z);
 
-	public double getWith();
+	public double getWidth();
 
 	public double getLength();
 
 	public void setRadius(double radius);
 
-	public int getDamageBufferInBlocks();
+	public double getDamageBufferInBlocks();
 
 	public void setDamageBufferInBlocks(int blocks);
 

@@ -76,6 +76,7 @@ public class CommandRedirecter implements Listener {
 					p.sendMessage(ChatColor.RED
 							+ "Usage: /worldborder <set|center|damager|warnings|get|add> ...");
 					break;
+
 			}
 
 		} else {

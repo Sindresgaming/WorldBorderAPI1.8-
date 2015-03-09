@@ -1,6 +1,6 @@
 package de.craftstuebchen.api.craftbukkit.world;
 
-import net.minecraft.server.v1_8_R1.EnumWorldBorderAction;
+import net.minecraft.server.v1_8_R2.PacketPlayOutWorldBorder.EnumWorldBorderAction;
 
 public enum WorldBorderAction {
 
